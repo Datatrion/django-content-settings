@@ -101,7 +101,8 @@ class Migration(migrations.Migration):
                 ),
             ],
             options={
-                "unique_together": {("user", "name", "tag")},
+                # "unique_together": {("user", "name", "tag")},
+                "unique_together": {("user", "name")},
             },
         ),
         migrations.AddIndex(
